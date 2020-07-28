@@ -1,0 +1,33 @@
+{
+  "name": "treetics-nextjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "axios": "^0.19.2",
+    "date-fns": "^2.15.0",
+    "express": "^4.17.1",
+    "googleapis": "^57.0.0",
+    "html-react-parser": "^0.13.0",
+    "next": "^9.5.0",
+    "next-fonts": "^1.4.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.1",
+    "react-calendar": "^3.1.0",
+    "react-dom": "^16.13.1",
+    "react-responsive-carousel": "^3.2.9",
+    "react-twitter-embed": "^3.0.3",
+    "wpapi": "^1.2.1"
+  },
+  "devDependencies": {}
+}
