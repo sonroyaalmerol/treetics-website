@@ -8,11 +8,11 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   bannerContainer: {
-    height: '90vh',
     width: '100%',
     paddingLeft: 50,
     paddingRight: 50,
     paddingTop: 100,
+    paddingBottom: 100,
     backgroundColor: '#f5e1fd'
   },
   bannerHeader: {
@@ -20,7 +20,10 @@ const useStyles = makeStyles((theme) => ({
     margin: 0
   },
   bannerImage: {
-    width: '50vw'
+    width: '60vw',
+    [theme.breakpoints.up('md')]: {
+      width: '20vw',
+    },
   },
 }));
 
@@ -34,7 +37,7 @@ const List = ({ bannerImage }) => {
       <Typography variant="h1" align="center" style={{ marginBottom: 40 }}>Latest Stuff</Typography>
       <Grid container direction="row" spacing={6} alignItems="center" justify="center">
         <Grid item>
-          <img src="/cover.png" style={{ width: '20vw' }} />
+          <img src="/cover.png" className={classes.bannerImage} />
         </Grid>
         <Grid item sm={6}>
           <Typography variant="body1">

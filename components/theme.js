@@ -56,6 +56,9 @@ export default responsiveFontSizes(createMuiTheme({
     },
     background: {
       default: "#fff"
+    },
+    lightBlue: {
+      main: "#80cee1"
     }
   },
   breakpoints: {
