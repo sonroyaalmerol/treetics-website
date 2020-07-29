@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import WP from 'utils/wordpress';
 
 import Banner from 'components/home/banner';
+import LatestStuff from 'components/home/latest-stuff';
 
 const useStyles = makeStyles((theme) => ({
   contentContainer: {
@@ -15,8 +16,7 @@ const useStyles = makeStyles((theme) => ({
     height: 100
   },
   rootContainer: {
-    width: '100%',
-    marginBottom: 80
+    width: '100%'
   }
 }));
 
@@ -28,6 +28,7 @@ const List = ({ posts, users }) => {
   return (
     <div className={classes.rootContainer}>
       <Banner />
+      <LatestStuff />
     </div>
   );
 };

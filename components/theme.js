@@ -1,6 +1,7 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import WimpyKidDialogueFont from 'fonts/WimpyKidDialogue.woff2';
 import WimpyKidFont from 'fonts/WimpyKid.woff2';
+import TreeticsFont from 'fonts/Treetics-Regular.woff2';
 
 const WimpyKidDialogue = {
   fontFamily: 'WimpyKidDialogue',
@@ -26,11 +27,23 @@ const WimpyKid = {
     'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF',
 };
 
+const Treetics = {
+  fontFamily: 'Treetics',
+  fontStyle: 'normal',
+  fontDisplay: 'swap',
+  fontWeight: 400,
+  src: `
+    url(${TreeticsFont}) format('woff2')
+  `,
+  unicodeRange:
+    'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF',
+};
+
 export default responsiveFontSizes(createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       '@global': {
-        '@font-face': [WimpyKidDialogue, WimpyKid],
+        '@font-face': [WimpyKidDialogue, WimpyKid, Treetics],
       },
     },
   },
@@ -60,22 +73,26 @@ export default responsiveFontSizes(createMuiTheme({
     },
     h1: {
       fontSize: '5rem',
-      fontFamily: 'WimpyKid'
+      fontFamily: 'Treetics'
     },
     h2: {
-      fontFamily: 'WimpyKid'
+      fontFamily: 'Treetics'
     },
     h3: {
-      fontFamily: 'WimpyKid'
+      fontFamily: 'Treetics'
     },
     h4: {
-      fontFamily: 'WimpyKid'
+      fontFamily: 'Treetics'
     },
     h5: {
-      fontFamily: 'WimpyKid'
+      fontFamily: 'Treetics'
     },
     h6: {
-      fontFamily: 'WimpyKid'
+      fontFamily: 'Treetics'
+    },
+    body1: {
+      fontFamily: 'WimpyKid',
+      fontSize: '1.5rem'
     },
     fontFamily: 'WimpyKidDialogue',
     fontWeight: 400

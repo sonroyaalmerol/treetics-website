@@ -7,11 +7,15 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   bannerContainer: {
-    height: '90vh',
+    height: '95vh',
     width: '100%',
-    backgroundColor: theme.palette.primary.main,
     paddingLeft: 50,
-    paddingRight: 50
+    paddingRight: 50,
+    backgroundImage: `url("/notebg.png")`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'right center',
+    backgroundAttachment: 'fixed'
   },
   bannerHeader: {
     fontSize: '7.5vw',
